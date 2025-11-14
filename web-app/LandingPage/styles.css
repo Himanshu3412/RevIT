@@ -1,0 +1,291 @@
+h1,h2,h3,h4,h5,h6 {
+  font-family: Poppins, sans-serif, Inter, system-ui, sans-serif;
+}
+body {
+  font-family: Inter, sans-serif, Inter, system-ui, sans-serif;
+}
+
+/* Animations */
+@keyframes glow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 60px rgba(0, 255, 255, 0.9);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Utility Classes */
+.glowing-border {
+  animation: glow 2s infinite alternate;
+}
+
+.pulse-animation {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.typing-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+/* Particle Effects */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+}
+
+/* Header Styles */
+.header-scrolled {
+  background-opacity: 0.95;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+/* FAQ Accordion */
+.faq-content {
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* Email Input Animation */
+.email-pulse {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-out;
+}
+
+/* Button Ripple Effect */
+.button-ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.6s ease-out;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes networkLine {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: 100;
+    }
+    100% {
+        opacity: 0.5;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.network-line {
+    stroke-dasharray: 100;
+    animation: networkLine 1.5s ease-in-out forwards;
+}
+
+.stat-number {
+    opacity: 0;
+    animation: countUp 0.5s ease-out forwards;
+}
+
+/* Recruitment Steps */
+.recruitment-step {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+
+.recruitment-step.animate-fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Network Grid */
+#network-grid {
+    position: relative;
+    overflow: hidden;
+}
+
+#network-grid line {
+    transition: opacity 1s ease-in-out;
+}
+
+#network-grid circle {
+    transition: transform 0.3s ease-in-out;
+}
+
+#network-grid circle:hover {
+    transform: scale(1.5);
+}
+
+/* Stats Section */
+.stat-container {
+    transition: transform 0.3s ease-out;
+}
+
+.stat-container:hover {
+    transform: translateY(-5px);
+}
+
+/* AI Logo */
+.ai-logo {
+    transition: transform 0.3s ease-out;
+}
+
+.ai-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Feature Icon Animations */
+@keyframes questionBubble {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(15px, -15px);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes emailNotification {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+@keyframes meterGauge {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Feature Icons */
+.feature-icon {
+    position: relative;
+    transition: transform 0.3s ease-out;
+}
+
+.feature-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Question Bubbles */
+#question-bubble-1 {
+    animation: questionBubble 3s infinite;
+}
+
+#question-bubble-2 {
+    animation: questionBubble 3s infinite;
+    animation-delay: 0.5s;
+}
+
+/* Email Notification */
+#email-notification {
+    animation: emailNotification 2s infinite;
+}
+
+/* Meter Gauge */
+#meter-gauge {
+    animation: meterGauge 4s infinite ease-in-out;
+}
+
+/* Feature Card */
+.feature-card {
+    transition: transform 0.3s ease-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}

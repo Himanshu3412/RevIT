@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="smooth-scroll">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Create your professional resume with RecruitAI's intelligent resume builder." />
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <title>RecruitAI | Create Your Professional Resume</title>
+    <meta name="description" content="Create your professional resume with RecruitAI's intelligent resume builder." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="antialiased text-gray-800 min-h-screen flex flex-col">
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-container">
+                <a href="../LandingPage/index.html" class="logo">RecruitAI</a>
+            </div>
+
+            <div class="nav-links">
+                <a href="../LandingPage/index.html" class="nav-link">Home</a>
+                <a href="../Login/index.html" class="nav-link login-btn">Login</a>
+                <a href="../Signup/index.html" class="nav-link signup-btn">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Background effects -->
+        <div class="background-container">
+            <div id="particles-js"></div>
+            <div class="gradient-overlay"></div>
+            
+            <!-- Animated Network/Mesh Background -->
+            <div class="mesh-background">
+                <!-- Glowing circles -->
+                <div class="glow-circle circle-1"></div>
+                <div class="glow-circle circle-2"></div>
+                <div class="glow-circle circle-3"></div>
+                <div class="glow-circle circle-4"></div>
+                <div class="glow-circle circle-5"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Create Your Resume</h2>
+                    <p>Fill in your details to generate a professional resume</p>
+                </div>
+
+                <form id="resumeForm" class="resume-form">
+                    <!-- Personal Information -->
+                    <div class="form-section" data-section="personal">
+                        <h3>Personal Information</h3>
+                        
+                        <div class="input-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe" />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+1 (234) 567-8900" />
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="form-section" data-section="education">
+                        <h3>Education</h3>
+                        <div id="educationContainer" class="education-container"></div>
+                        <button type="button" id="addEducation" class="add-button">Add Another Education</button>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="form-section" data-section="skills">
+                        <h3>Skills</h3>
+                        <div class="input-group">
+                            <label for="skills">Skills (comma-separated)</label>
+                            <textarea id="skills" name="skills" required rows="3" placeholder="JavaScript, React, Node.js"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Projects -->
+                    <div class="form-section" data-section="projects">
+                        <h3>Projects</h3>
+                        <div id="projectsContainer" class="projects-container"></div>
+                        <button type="button" id="addProject" class="add-button">Add Another Project</button>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="form-section" data-section="experience">
+                        <h3>Experience</h3>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="hasExperience">
+                            <label for="hasExperience">I have work experience</label>
+                        </div>
+                        <div id="experienceFields" class="experience-container hidden">
+                            <div class="experience-entry">
+                                <!-- Experience fields will be added dynamically -->
+                            </div>
+                            <button type="button" id="addExperience" class="add-button">Add Another Experience</button>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-actions">
+                        <button type="submit" class="submit-button">Review Resume</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Resume Review Modal -->
+    <div id="resumeReviewModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Review Your Resume</h2>
+                <button id="closeReviewModal" class="close-button">×</button>
+            </div>
+            <div class="modal-body">
+                <!-- Personal Information Section -->
+                <div class="review-section">
+                    <div class="review-section-header">
+                        <h3>Personal Information</h3>
+                        <button class="edit-section" data-section="personal">Edit</button>
+                    </div>
+                    <div id="personalReview" class="review-item"></div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="review-section">
+                    <div class="review-section-header">
+                        <h3>Education</h3>
+                        <button class="edit-section" data-section="education">Edit</button>
+                    </div>
+                    <div id="educationReview" class="review-item"></div>
+                </div>
+
+                <!-- Experience Section -->
+                <div class="review-section" id="experienceReviewSection">
+                    <div class="review-section-header">
+                        <h3>Experience</h3>
+                        <button class="edit-section" data-section="experience">Edit</button>
+                    </div>
+                    <div id="experienceReview" class="review-item"></div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="review-section">
+                    <div class="review-section-header">
+                        <h3>Skills</h3>
+                        <button class="edit-section" data-section="skills">Edit</button>
+                    </div>
+                    <div id="skillsReview" class="review-item"></div>
+                </div>
+
+                <!-- Projects Section -->
+                <div class="review-section">
+                    <div class="review-section-header">
+                        <h3>Projects</h3>
+                        <button class="edit-section" data-section="projects">Edit</button>
+                    </div>
+                    <div id="projectsReview" class="review-item"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="editResume" class="button secondary-button">Edit Resume</button>
+                <button id="submitResume" class="button primary-button">Create Resume</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script src="firebase-client.js"></script>
+</body>
+
+</html> 

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description"
+    content="Streamline your recruitment process with our AI-powered platform. Smart resume evaluation, personalized assessments, and unbiased scoring for both candidates and recruiters.">
+  <meta name="theme-color" content="#ffffff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index, follow">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>AI-Powered Recruitment Platform | Smart Hiring for Candidates & Recruiters</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Streamline your recruitment process with our AI-powered platform. Smart resume evaluation, personalized assessments, and unbiased scoring for both candidates and recruiters.">
+  <meta name="keywords" content="AI recruitment, hiring platform, job search, recruitment software">
+  <meta property="og:title" content="AI-Powered Recruitment Platform">
+  <meta property="og:description" content="Smart hiring platform for candidates and recruiters">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="AI Recruitment Platform">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI-Powered Recruitment Platform">
+  <meta name="twitter:description" content="Smart hiring platform for candidates and recruiters">
+
+  <!-- Font Links -->
+  <link rel="icon" type="image/x-icon" href="">
+</head>
+
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="sr-only">Skip to main content</a>
+
+  <!-- Main content area -->
+  <main id="main-content">
+    <!-- Navigation Bar -->
+    <header id="header">
+      <nav class="container">
+        <div class="logo-container">
+          <a href="../LandingPage/index.html" class="logo">RecruitAI</a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-links">
+          <a href="../LandingPage/index.html" class="nav-link">Home</a>
+          <a href="../Login/index.html" class="login-btn">Login</a>
+          <a href="../SignUp/index.html" class="signup-btn">Sign Up</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="menu-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile navigation -->
+        <div id="mobile-menu">
+          <button id="close-menu-button" aria-label="Close menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="close-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list">
+            <li><a href="../LandingPage/index.html" class="nav-link">Home</a></li>
+            <li><a href="../Login/index.html" class="nav-link">Login</a></li>
+            <li><a href="../SignUp/index.html" class="nav-link">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Role Selection Section -->
+    <section id="roleSelection">
+      <!-- Background Effects -->
+      <div class="bg-gradient"></div>
+      <div class="glow-circle glow-circle-1"></div>
+      <div class="glow-circle glow-circle-2"></div>
+
+      <!-- Main Content Container -->
+      <div class="container">
+        <!-- Logo and Header -->
+        <div class="section-header">
+          <div class="logo-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h1>RecruitAI</h1>
+          <p>Choose your role to get started</p>
+        </div>
+
+        <!-- Role Selection Cards -->
+        <div class="cards-container">
+          <!-- Candidate Card -->
+          <div class="role-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Professional candidate">
+              <div class="card-overlay">
+                <div class="role-icon">
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <h2>For Candidates</h2>
+              </div>
+            </div>
+            <div class="card-content">
+              <p>Get AI-evaluated feedback, personalized assessments, and real-time updates to improve your hiring journey.</p>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i>AI-powered resume analysis</li>
+                <li><i class="fas fa-check"></i>Personalized job recommendations</li>
+                <li><i class="fas fa-check"></i>Real-time application tracking</li>
+              </ul>
+              <button type="button" id="candidateSignupBtn" class="btn btn-primary">Sign Up as Candidate</button>
+            </div>
+          </div>
+
+          <!-- Recruiter Card -->
+          <div class="role-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1425421669292-0c3da3b8f529" alt="Professional recruiter">
+              <div class="card-overlay">
+                <div class="role-icon">
+                  <i class="fas fa-building"></i>
+                </div>
+                <h2>For Recruiters</h2>
+              </div>
+            </div>
+            <div class="card-content">
+              <p>Simplify your recruitment process with smart resume evaluation, auto-generated assessments, and unbiased scoring.</p>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i>AI-powered candidate filtering</li>
+                <li><i class="fas fa-check"></i>Auto-generated skill assessments</li>
+                <li><i class="fas fa-check"></i>Unbiased matching algorithms</li>
+              </ul>
+              <button type="button" id="recruiterSignupBtn" class="btn btn-primary">Sign Up as Recruiter</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back to Login Link -->
+        <div class="back-to-login">
+          <a href="../Login/index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to login</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Candidate Signup Modal -->
+    <div id="candidateSignupModal" class="modal hidden" aria-modal="true" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <button type="button" class="close-button" aria-label="Close modal">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <div class="modal-header">
+          <div class="modal-title">
+            <div class="role-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <div>
+              <h2>Candidate Signup</h2>
+              <p>Create your candidate account</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <form id="candidateForm">
+            <!-- Basic Information -->
+            <div class="form-section">
+              <div class="form-group">
+                <label for="candidateName" class="form-label">Full Name</label>
+                <input type="text" id="candidateName" name="candidateName" class="form-input" placeholder="John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="candidateEmail" class="form-label">Email Address</label>
+                <input type="email" id="candidateEmail" name="candidateEmail" class="form-input" placeholder="your@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="candidatePassword" class="form-label">Password</label>
+                <input type="password" id="candidatePassword" name="candidatePassword" class="form-input" placeholder="••••••••" required>
+              </div>
+
+              <div class="form-group">
+                <label for="candidateConfirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" id="candidateConfirmPassword" name="candidateConfirmPassword" class="form-input" placeholder="••••••••" required>
+              </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-section">
+              <div class="form-group">
+                <label for="candidateResume" class="form-label">Resume Summary</label>
+                <textarea id="candidateResume" name="candidateResume" class="form-input" rows="3"
+                  placeholder="Briefly describe your professional background"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="candidateJobRole" class="form-label">Job Role Interested In</label>
+                <input type="text" id="candidateJobRole" name="candidateJobRole" class="form-input" placeholder="e.g. Frontend Developer">
+              </div>
+
+              <div class="form-group">
+                <label for="candidateSkills" class="form-label">Skills</label>
+                <input type="text" id="candidateSkills" name="candidateSkills" class="form-input" placeholder="e.g. JavaScript, React, Node.js">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Register as Candidate</button>
+
+            <div class="form-footer">
+              Already have an account? <a href="../Login/index.html" class="link">Sign in instead</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recruiter Signup Modal -->
+    <div id="recruiterSignupModal" class="modal hidden" aria-modal="true" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <button type="button" class="close-button" aria-label="Close modal">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <div class="modal-header">
+          <div class="modal-title">
+            <div class="role-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <div>
+              <h2>Recruiter Signup</h2>
+              <p>Create your recruiter account</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <form id="recruiterForm">
+            <!-- Basic Information -->
+            <div class="form-section">
+              <div class="form-group">
+                <label for="recruiterName" class="form-label">Full Name</label>
+                <input type="text" id="recruiterName" name="recruiterName" class="form-input" placeholder="John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="recruiterEmail" class="form-label">Email Address</label>
+                <input type="email" id="recruiterEmail" name="recruiterEmail" class="form-input" placeholder="your@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="recruiterPassword" class="form-label">Password</label>
+                <input type="password" id="recruiterPassword" name="recruiterPassword" class="form-input" placeholder="••••••••" required>
+              </div>
+
+              <div class="form-group">
+                <label for="recruiterConfirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" id="recruiterConfirmPassword" name="recruiterConfirmPassword" class="form-input" placeholder="••••••••" required>
+              </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-section">
+              <div class="form-group">
+                <label for="recruiterOrganization" class="form-label">Organization Name</label>
+                <input type="text" id="recruiterOrganization" name="recruiterOrganization" class="form-input" placeholder="Company Inc.">
+              </div>
+
+              <div class="form-group">
+                <label for="recruiterIndustry" class="form-label">Industry</label>
+                <select id="recruiterIndustry" name="recruiterIndustry" class="form-input">
+                  <option value="" disabled selected>Select industry</option>
+                  <option value="technology">Technology</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="finance">Finance</option>
+                  <option value="education">Education</option>
+                  <option value="retail">Retail</option>
+                  <option value="manufacturing">Manufacturing</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="recruiterOpenings" class="form-label">Number of Openings</label>
+                <input type="number" id="recruiterOpenings" name="recruiterOpenings" class="form-input" min="1" placeholder="e.g. 5">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Register as Recruiter</button>
+
+            <div class="form-footer">
+              Already have an account? <a href="../Login/index.html" class="link">Sign in instead</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  
+  <script src="scripts.js"></script>
+  <script src="firebase-client.js"></script>
+</body>
+
+</html>
