@@ -12,19 +12,23 @@ An AI-powered recruitment platform that streamlines the hiring process by evalua
 ## Screenshots
 
 ### Landing Page
-![Landing Page](assets/LandingPage.jpg)
+![LandingPage](https://github.com/user-attachments/assets/908c9e5b-f6cc-4222-a59d-ab62a194728f)
+)
 
 ### Authentication Pages
-![Login Page](assets/LoginPage.jpg)
-![Signup Page](assets/SignUpPage.jpg)
+![LoginPage](https://github.com/user-attachments/assets/ae273d40-05d4-4823-9646-693ecb818f20)
+![SignUpPage](https://github.com/user-attachments/assets/447d081a-6241-490f-a746-dbbaafb1ba0b)
+
 
 ### Dashboard Views
-![Candidate Dashboard](assets/CandidateDashboard.jpg)
-![Recruiter Dashboard](assets/RecruiterDashboard.jpg)
+![CandidateDashboard](https://github.com/user-attachments/assets/f8454015-745c-4e60-b43d-10fd2dd7b571)
+![RecruiterDashboard](https://github.com/user-attachments/assets/755077c7-23ce-414f-88e1-8a10ee19decf)
+
 
 ### Resume Analysis
-![Resume Analysis I](assets/ResumeAnalysis1.jpg)
-![Resume Analysis II](assets/ResumeAnalysis2.jpg)
+![ResumeAnalysis1](https://github.com/user-attachments/assets/0519cd00-1728-4a11-a768-f9d89bfd3a15)
+![ResumeAnalysis2](https://github.com/user-attachments/assets/ac297b45-8109-44eb-b651-77c2d60d592b)
+
 
 ## Features
 
