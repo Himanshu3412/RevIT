@@ -1,4 +1,4 @@
-# RevIT
+# RecruitAI
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com/)
@@ -70,8 +70,8 @@ Before running this application, make sure you have the following installed:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/RevIT.git
-   cd RevIT
+   git clone https://github.com/your-username/RecruitAI.git
+   cd RecruitAI
    ```
 
 2. **Set up Python environment:**
@@ -178,7 +178,7 @@ FIREBASE_AUTH_DOMAIN=your_auth_domain
 ## Project Structure
 
 ```
-RevIT/
+RecruitAI/
 ├── backend-api/                # Python FastAPI backend
 │   ├── combined_check.py        # Main API file
 │   ├── requirements.txt         # Python dependencies
