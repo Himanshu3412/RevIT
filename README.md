@@ -196,8 +196,7 @@ RevIT/
 │   ├── Candidate_Dashboard/    # Candidate dashboard
 │   └── Recruiter_Dashboard/    # Recruiter dashboard
 ├── README.md                   # This file
-├── .gitignore                  # Git ignore rules
-└── TODO.md                     # Development tasks
+└── .gitignore                  # Git ignore rules
 ```
 
 ## Usage
@@ -230,17 +229,11 @@ Use the Swagger UI at http://localhost:8000/docs for interactive API testing.
 - Verify candidate evaluation accuracy
 - Check responsive design on different devices
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Support
 
-<<<<<<< HEAD
-For support, email ihimanshukumar.hk6@gmail.com or create an issue in this repository.
-=======
 For support, email ihimanshukumar.hk@gmail.com or create an issue in this repository.
->>>>>>> a411005a6b194775b39e0ac917f9e351d893b7a3
 
 ## Acknowledgments
 
