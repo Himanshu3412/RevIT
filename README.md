@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-blue)
+![Firebase](https://img.shields.io/badge/Firebase-Auth-orange)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
+
 # RecruitAI
 
 An AI-powered recruitment platform that streamlines the hiring process by evaluating candidates based on their degrees, majors, skills, and project experience. The platform provides comprehensive candidate assessment through automated scoring and reporting.
@@ -15,9 +21,9 @@ An AI-powered recruitment platform that streamlines the hiring process by evalua
 ## Tech Stack
 
 ### Backend
-- **Python FastAPI**: Main API for candidate evaluation
-- **Node.js Express**: Web server for frontend and authentication
-- **Firebase**: Authentication and database storage
+- **🐍 Python FastAPI**: Main API for candidate evaluation
+- **🟩 Node.js Express**: Web server for frontend and authentication
+- **🔥 Firebase**: Authentication and database storage
 
 ### Frontend
 - **HTML5/CSS3/JavaScript**: Responsive web interface
