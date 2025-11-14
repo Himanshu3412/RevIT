@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RevIT
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
@@ -7,15 +6,6 @@
 [![Express.js](https://img.shields.io/badge/Express.js-4.21+-blue.svg)](https://expressjs.com/)
 [![Firebase](https://img.shields.io/badge/Firebase-11.6+-orange.svg)](https://firebase.google.com/)
 [![spaCy](https://img.shields.io/badge/spaCy-3.7+-blue.svg)](https://spacy.io/)
-=======
-![Python](https://img.shields.io/badge/Python-3.8+-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
-![Node.js](https://img.shields.io/badge/Node.js-Backend-blue)
-![Firebase](https://img.shields.io/badge/Firebase-Auth-orange)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
-
-# RecruitAI
->>>>>>> a411005a6b194775b39e0ac917f9e351d893b7a3
 
 An AI-powered recruitment platform that streamlines the hiring process by evaluating candidates based on their degrees, majors, skills, and project experience. The platform provides comprehensive candidate assessment through automated scoring and reporting.
 
