@@ -13,7 +13,7 @@ An AI-powered recruitment platform that streamlines the hiring process by evalua
 
 ### Landing Page
 ![LandingPage](https://github.com/user-attachments/assets/908c9e5b-f6cc-4222-a59d-ab62a194728f)
-)
+
 
 ### Authentication Pages
 ![LoginPage](https://github.com/user-attachments/assets/ae273d40-05d4-4823-9646-693ecb818f20)
